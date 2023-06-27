@@ -18,11 +18,12 @@ void palindrome(char buff[]){
     int i,flag=0;
     for(i=0;i<len/2;i++)
         if(str[i]!=str[len-i-1]){
-            printf("\n%s is not palindrome\n",str);
+            printf("%s is not palindrome\n",str);
             flag=1;
             break;
         }
-    if(!flag) printf("\nString is a palindrome\n");
+    if(!flag) printf("%s is palindrome\n",str);
+
 
 }
 

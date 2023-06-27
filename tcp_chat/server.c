@@ -26,6 +26,23 @@ void low_up(char buff[]){
 		printf("\nThe inverted case buffer is:%s\nThe number of characters is %d\n",str,len);
 
 }
+
+void token(char buff[]){
+    char *token;
+    token = strtok(buff, " ");  // Split the string into tokens using space as the delimiter
+
+    while (token != NULL)
+    {
+        // Capitalize the first letter of the token
+        token[0] = toupper(token[0]);
+        // Print the first letter
+        printf("%c ", token[0]);
+        // Get the next token
+        token = strtok(NULL, " ");
+    }
+    printf("\n"); 
+}
+
 void chat(int connfd){
     char buff[MAX];
     int n;
