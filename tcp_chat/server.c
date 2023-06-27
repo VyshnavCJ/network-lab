@@ -49,7 +49,8 @@ void chat(int connfd){
     while(1){
         bzero(buff, MAX);
         read(connfd, buff, sizeof(buff));
-        low_up(buff);
+        // low_up(buff);
+        token(buff);
         printf("Server: ");
         bzero(buff, MAX);
         n =0;
