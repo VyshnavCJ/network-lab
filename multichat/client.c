@@ -23,6 +23,7 @@ void *recvmg(void *my_sock){
     return NULL;
 }
 
+
 int main(){
 	pthread_t recvt;
 	int sockfd;
