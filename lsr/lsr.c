@@ -44,13 +44,7 @@ int main() {
   }
 
   for (i = 0; i < count; i++) {
-    printf("\n%d==>%d\nPath taken:\n%d", src_router, i, i);
-    w = i;
-    while (w != src_router) {
-      printf("<--%d ", last[w]);
-      w = last[w];
-    }
-    printf("\nShortest path cost:%d", dist[i]);
+    printf("\nShortest path cost from %d to %d :%d",src_router, i,dist[i]);
   }
 }
 

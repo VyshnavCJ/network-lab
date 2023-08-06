@@ -60,7 +60,7 @@ int main()
 		}
 		if(i==no){
 				break;
-			}
+		}
 		
 	}
  close(sockfd);	
